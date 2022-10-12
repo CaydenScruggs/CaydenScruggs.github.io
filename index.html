@@ -22,6 +22,15 @@ function navigator(){
 
 </head>
 <body>
+
+<script>
+  function secret(){
+    document.getElementById("webtitle").innerHTML="I love you, Pay.";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
 <div class="header">
   <input type="image" src="images/iconlocked.png" id="navigator" class="icon" onclick="navigator();">
   <div id="navig">
@@ -34,31 +43,62 @@ function navigator(){
 
 
 
-<h1>Garter Scales Project Hub</h1>
+<h1 id="webtitle">Garter Scales Project Hub</h1>
 <p>My name is Cayden Scruggs, this is my WIP (website in progress). I hope to have easily accessible links to my projects so that you, end user, will be able to find them!</p>
 
 <div id="projectrow">
 
 <a class="projects" href="files/Shadows of Darkroth.jar">
 <div class="projectarea">
-<img src="images/darkroth.png"><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
+<img src="images/darkroth.png" alt="Logo of black castle on dark background. Says Shadows of Darkroth."><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
 
 </div>
 </a>
 
 <a class="projects" href="files/resume.pdf">
 <div class="projectarea">
-<img src="images/resume.png"><span class="caption">My resume, I'm currently open to internships in the tech sphere!</span>
+<img src="images/resume.png" alt="Thumbnail of my resume"><span class="caption">My resume, I'm currently open to internships in the tech sphere!</span>
 </div>
 </a>
 
 <a class="projects" href="A_Final_Project_cs/AA_homepage_cs.html">
 <div class="projectarea">
-<img src="images/CSCE_project.png"><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
+<img src="images/CSCE_project.png" alt="A padlock with the metal ring being a snake."><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
 </div>
 </a>
 
 </div>
+
+<div id="skillrow">
+  <span id="title">skills</span>
+
+<div class="skillarea">
+  <img src="images/tuxtransparent.png" alt="Tux, the linux penguin."><span class="caption">Linux</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/java.png" alt="Java logo."><span class="caption">Java</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/html.png" alt="HTML Logo."><span class="caption">HTML</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/css.png" alt="CSS Logo."><span class="caption">CSS</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/pixlr.png" alt="Pixlr Logo."><span class="caption">Pixlr E</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/kali.png" alt="Kali Logo."><span class="caption">Kali Linux</span>
+</div>
+
+</div>
+
+<input type="image" src="images/iconlocked.png" alt="Shhh" style="height:10px;position:fixed;bottom:0px;left:0px;" onclick="secret();">
 
 </body>
 </html>
