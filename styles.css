@@ -135,26 +135,6 @@ p {
 		color: black;
 		font-weight: bold;
 	}
-@media screen and (max-width: 1200px){
-	#navig{
-		margin-left: 5vw;
-	}
-}
-@media screen and (max-width: 1000px){
-	#navig{
-		margin-left: 7.5vw;
-	}
-}
-@media screen and (max-width: 600px){
-	#navig{
-		margin-left: 15vw;
-	}
-}
-@media screen and (max-width: 400px){
-	#navig{
-		margin-left: 20vw;
-	}
-}
 	#navigator{
 			position: fixed;
 			z-index: 2;
