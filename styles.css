@@ -84,7 +84,7 @@ p {
 			height: 70px;
 			z-index: 1;
 			overflow-y: hidden;
-			overflow-x: scroll;
+			overflow-x:auto;
 			border-radius: .5vh;
 			opacity: 0.8;
 			transition: 1.2s;
