@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="AA_Final_cs.css">
+<link rel="icon" href="Final Images/icon2.png">
+<script type="text/javascript">
+function navigator(){
+  state = document.getElementById('navigator').value;
+  if(state == "CLOSE"){
+    document.getElementById("navigator").value="MENU";
+    document.getElementById('navig').style.width="0%";
+  }else{
+    document.getElementById("navigator").value="CLOSE";
+    document.getElementById('navig').style.width="95px";
+  }
+}//I looked around for a while to find an on/off button then combined it with my existing navigation code to create this!
+</script>
+
+</head>
+<body>
+<br><br><br>
+<input type="button" value="MENU" id="navigator" onclick="navigator();">
+
+<div id="navig"><div class="theLinks">
+	<a href="AA_homepage_cs.html" style="background-color: transparent;"><img src="Final Images/icon2.png" alt="icon" id="icon"></a>
+	<a href="AA_page1_cs.html">Cyber-Attacks and Security</a>
+	<a href="AA_page2_cs.html">About Me</a>
+	<a href="A_Template_cs.html">Template</a>
+	<a href="../lab2cs.html">Lab 2</a>
+	<a href="../lab3Acs.html">Lab 3A</a>
+	<a href="../lab3Bcs.html">Lab 3B</a>
+	<a href="../lab3Acs.html/#links">Useful Links</a>
+	<a href="../lab4Acs.html">Lab 4A</a>
+	<a href="../lab4B1cs.html">Lab 4B1</a>
+	<a href="../lab4B2cs.html">Lab 4B2</a>
+	<a href="../lab5Acs.html">Lab 5A</a>
+	<a href="../lab5Bcs.html">Lab 5B</a>
+	<a href="../lab5Ccs.html">Lab 5C</a>
+	<a href="../lab6Acs.html">Lab 6A</a>
+	<a href="../lab6B1cs.html">Lab 6B1</a>
+	<a href="../lab6B2cs.html">Lab 6B2</a>
+	<a href="../lab7Acs.html">Lab 7A</a>
+	<a href="../lab7Bcs.html">Lab 7B</a>
+	<a href="../lab8acs.html">Lab 8a</a>
+	<a href="../lab8bcs.html">Lab 8b</a>
+	<a href="../lab9acs.html">Lab 9a</a>
+	<a href="../lab9bcs.html">Lab 9b</a>
+	<a href="../lab10acs.html">Lab 10a</a>
+	<a href="../lab10bcs.html">Lab 10b</a>
+	<a href="../lab11acs.html">Lab 11a</a>
+	<a href="../lab11bcs.html">Lab 11b</a>
+	<a href="../lab12acs.html">Lab 12a</a>
+	<a href="../lab13acs.html">Lab 13a</a>
+	</div>
+</div>
+
+
+<div>
+	<a href="AA_page1_cs.html"><img id="lock" src="Final Images/icon.png" alt="lock"></a>
+</div>
+
+</body>
+</html>

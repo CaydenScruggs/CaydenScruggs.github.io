@@ -1,0 +1,220 @@
+body, input {
+		font-family:  Helvetica, Verdana, sans-serif;
+}
+p, h1, h2, ul, h3, form {
+		padding-left: 100px;
+	}
+div {
+		font-family: Helvetica, Verdana, sans-serif;
+}
+p, ul, ol {
+		font-size: 14pt;
+		line-height: 1.5;
+		padding: 5px 200px 30px 150px;
+	}
+#wc {
+	  width: 30vw;
+	  padding-left: 13vw;
+	  padding-bottom: 50px;
+}
+#colop {
+	  width: 33.5vw;
+	  padding-left: 10vw;
+	  padding-right: 10vw;
+	  padding-bottom: 50px;
+}
+	.theLinks{
+			position: relative;
+			top: 10px;
+			bottom: 30px;
+			padding-left: 5px;
+			padding-right: 5px;
+			text-align: center;
+			padding-bottom: 30px;
+}
+
+	.theLinks a{
+			display: block;
+			font-size: 12pt;
+			font-weight: bold;
+			color: black;
+			text-decoration: none;
+			background-color: darkgrey;
+			border-radius:10px;
+			margin-top: 10px;
+			padding: 5px 5px 5px 5px;
+}
+	.theLinks a:hover{
+			display: block;
+			font-size: 12pt;
+			font-weight: bold;
+			color: black;
+			text-decoration: none;
+			background-color: white;
+			border-radius:10px;
+			margin-top: 10px;
+			padding: 5px 5px 5px 5px;
+			transition: .5s;
+}
+	#navig{
+			position: fixed;
+			top: 100px;
+			width: 0;
+			height: 90vh;
+			z-index: 2;
+			overflow-x: hidden;
+			background-color: grey;
+			border-radius:10px;
+			opacity: 0.8;
+			transition: 1s;
+			font-size: 10px;
+			scrollbar-color: black white;
+}
+	#navigator{
+			background-color: transparent;
+			border: none;
+			font-size: 14pt;
+			font-weight: bold;
+			position: fixed;
+			cursor: pointer;
+	}
+	#navigator:hover{
+			background-color: transparent;
+			border: none;
+			font-size: 16pt;
+			font-weight: bold;
+			transition: .5s;
+	}
+	#icon{
+			width: 40px;
+	}
+	#icon:hover{
+		width: 40px;
+		animation-name: smallpulse;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+		@keyframes smallpulse {
+			0% {width:40px}
+			50% {width: 50px}
+			100% {width: 40px}
+}
+		#lock {
+			width: 500px;
+			position: fixed;
+			top: -100%;
+			right: -100%;
+			left: -100%;
+			bottom: -100%;
+			margin: auto;
+}
+		#lock:hover {
+			width: 500px;
+			position: fixed;
+			top: -100%;
+			right: -100%;
+			left: -100%;
+			bottom: -100%;
+			margin: auto;
+			animation-name: pulse;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+}
+		@keyframes pulse {
+			0% {width:500px}
+			50% {width: 600px}
+			100% {width: 500px}
+}
+		#quiz {
+			background-color: lightgrey;
+			border: none;
+			border-radius:25px;
+			font-size: 24pt;
+			cursor: pointer;
+			position: relative;
+			left: 35vw;
+			padding: 10px 10px 10px 10px;
+			font-weight: bold;
+		}
+		#video {
+			display: block;
+			margin: auto;
+			padding-bottom: 50px;
+		}
+		#media {
+			padding-top: 50px;
+		}
+		.container {
+  position: absolute;
+  background-color: #585858;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+#toget {
+	display: inline-block;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 10%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

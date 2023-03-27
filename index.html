@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/icon2.png">
+<script type="text/javascript">
+state = "off"
+function navigator(){
+  if(state == "on"){
+    document.getElementById("navigator").src="images/iconlocked.png";
+    document.getElementById('navig').style.left="-150%";
+    state = "off"
+  }else{200
+    document.getElementById("navigator").src="images/icon2.png";
+    document.getElementById('navig').style.left="0%";
+    state= "on"
+  }
+}
+</script>
+
+</head>
+<body>
+
+<script>
+  function secret(){
+    document.getElementById("webtitle").innerHTML="I love you, Pay.";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
+<div class="header">
+  <input type="image" src="images/iconlocked.png" id="navigator" class="icon" onclick="navigator();">
+  <div id="navig">
+    <div class="theLinks">
+	<a href="index.html">Home</a>
+	<a href="ProjectX.X">Project X</a>
+	  </div>
+  </div>
+</div>
+
+
+
+<h1 id="webtitle">Cayden Scruggs Project Hub</h1>
+<p>My name is Cayden Scruggs, this is my WIP (website in progress). Here you can find links to my projects and resume as well as some of my applicable skills!</p>
+
+<div id="projectrow">
+
+<a class="projects" href="files/Shadows of Darkroth.jar">
+<div class="projectarea">
+<img src="images/darkroth.png" alt="Logo of black castle on dark background. Says Shadows of Darkroth."><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
+
+</div>
+</a>
+
+<a class="projects" href="files/resume.pdf">
+<div class="projectarea">
+<img src="images/resume.png" alt="Thumbnail of my resume"><span class="caption">My resume, I'm currently open to internships in the tech sphere! (pdf)</span>
+</div>
+</a>
+
+<a class="projects" href="A_Final_Project_cs/AA_homepage_cs.html">
+<div class="projectarea">
+<img src="images/CSCE_project.png" alt="A padlock with the metal ring being a snake."><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
+</div>
+</a>
+
+<a class="projects" href="files/FredGame.jar">
+<div class="projectarea">
+<img src="images/fred_game_icon.png" alt="Fred the Ghost holding a pumpkin."><span class="caption">A simple 2D game about collecting candy made with no game engine.</span>
+</div>
+</a>
+
+</div>
+
+<div id="skillrow">
+  <span id="title">skills</span>
+
+<div class="skillarea">
+  <img src="images/tuxtransparent.png" alt="Tux, the linux penguin."><span class="caption">Linux</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/java.png" alt="Java logo."><span class="caption">Java</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/c_sharp.png" alt="C# Logo."><span class="caption">C#</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/html.png" alt="HTML Logo."><span class="caption">HTML</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/css.png" alt="CSS Logo."><span class="caption">CSS</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/pixlr.png" alt="Pixlr Logo."><span class="caption">Pixlr E</span>
+</div>
+
+<div class="skillarea">
+  <img src="images/kali.png" alt="Kali Logo."><span class="caption">Kali Linux</span>
+</div>
+
+</div>
+
+<input type="image" src="images/fredtransp.png" alt="Shhh" style="height:10px;position:fixed;bottom:0px;left:0px;" onclick="secret();">
+
+</body>
+</html>

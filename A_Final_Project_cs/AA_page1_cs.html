@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<title>Cyber-Attacks and Security</title>
+<link rel="stylesheet" href="AA_Final_cs.css">
+<link rel="icon" href="Final Images/icon2.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { 
+			background-image: url('Final Images/cameras.jpg');
+			background-position: top;
+			background-repeat: repeat-x;
+			background-size: 200px;
+}
+</style>
+
+<script type="text/javascript">
+function navigator(){
+  currentvalue = document.getElementById('navigator').value;
+  if(currentvalue == "CLOSE"){
+    document.getElementById("navigator").value="MENU";
+    document.getElementById('navig').style.width="0%";
+  }else{
+    document.getElementById("navigator").value="CLOSE";
+    document.getElementById('navig').style.width="95px";
+  }
+}
+//I looked around for a while to find an on/off button then combined it with my existing navigation code to create this!
+</script>
+
+<script>
+
+	function quizTime(){
+		document.body.innerHTML="<br><br><br><br><br><br><h2 id='qone'>Question 1</h2><form name='formcat'>Who is thought to have been behind the Wannacry attack?<br><input type='radio' name='answer' onclick='correction()'>China<br><input type='radio' name='answer' onclick='correction()'>North Korea<br><input type='radio' name='answer' onclick='correction()'>Russia<br><input type='radio' name='answer' onclick='correction()'>India<br></form><h2 id='qtwo'>Question 2</h2><form name='formcattwo'>True or False: Cyber Warfare can harm you<br><input type='radio' name='answer' onclick='correctionTwo()'>True<br><input type='radio' name='answer' onclick='correctionTwo()'>False<br></form><h2 id='qthree'>Question 3</h2><form name='formcatthree'>Will you observe best practice in Cybersecurity?<br><input type='radio' name='answer' onclick='correctionThree()'>Yes<br><input type='radio' name='answer' onclick='correctionThree()'>No<br><br><br><br><br></form><input type='button' value='?' onclick='congratulations()' style='margin-left:100px;'>"
+}//clear the page and write the quiz
+		function correction(){
+			if(document.formcat.answer[1].checked==true) {
+				document.getElementById("qone").innerHTML="Correct!";
+	}
+			else{
+				document.getElementById("qone").innerHTML="That is incorrect";
+	}
+}
+		function correctionTwo(){
+			if(document.formcattwo.answer[0].checked==true) {
+				document.getElementById("qtwo").innerHTML="Correct!";
+	}
+			else{
+				document.getElementById("qtwo").innerHTML="That is incorrect";
+	}
+}
+		function correctionThree(){
+			if(document.formcatthree.answer[0].checked==true) {
+				document.getElementById("qthree").innerHTML="Thank You!";
+	}
+			else{
+				document.getElementById("qthree").innerHTML="Good luck.";
+	}
+}
+		function congratulations(){
+			if(document.formcat.answer[1].checked==true)
+			if(document.formcattwo.answer[0].checked==true)
+			if(document.formcatthree.answer[0].checked==true) {
+	
+			document.body.innerHTML="<h1 style='text-align:center;padding-top:15px;padding-left:0px;font-size:50pt;'>Good Job!</h1><div><a href='AA_homepage_cs.html'><img id='lock' src='Final Images/icon.png' alt='lock'></a></div>";
+	}
+}//routes the user away from the quiz when they correctly answer all questions
+		function hack(){
+			setTimeout(function(){ alert("Intruder Detected!");}, 120000);
+			setTimeout(function(){ alert("hello there"); document.body.style.fontFamily="courier new"; document.body.style.color="green";document.body.style.backgroundColor="black";document.body.style.transition=".5s";document.getElementById("navigator").style.color="green";}, 300000);
+        }
+	//get hacked! this script displays an "intruder detected" message after 2 minutes and after 5 minutes gives the page a terminal-inspired look
+</script>
+
+</head>
+<body onload="hack()"> 
+<br><br><br>
+
+<input type="button" value="MENU" id="navigator" onclick="navigator();">
+
+<div id="navig"><div class="theLinks">
+	<a href="AA_homepage_cs.html" style="background-color: transparent;"><img src="Final Images/icon2.png" alt="icon" id="icon"></a>
+	<a href="AA_page1_cs.html">Cyber-Attacks and Security</a>
+	<a href="AA_page2_cs.html">About Me</a>
+	<a href="A_Template_cs.html">Template</a>
+	<a href="../lab2cs.html">Lab 2</a>
+	<a href="../lab3Acs.html">Lab 3A</a>
+	<a href="../lab3Bcs.html">Lab 3B</a>
+	<a href="../lab3Acs.html/#links">Useful Links</a>
+	<a href="../lab4Acs.html">Lab 4A</a>
+	<a href="../lab4B1cs.html">Lab 4B1</a>
+	<a href="../lab4B2cs.html">Lab 4B2</a>
+	<a href="../lab5Acs.html">Lab 5A</a>
+	<a href="../lab5Bcs.html">Lab 5B</a>
+	<a href="../lab5Ccs.html">Lab 5C</a>
+	<a href="../lab6Acs.html">Lab 6A</a>
+	<a href="../lab6B1cs.html">Lab 6B1</a>
+	<a href="../lab6B2cs.html">Lab 6B2</a>
+	<a href="../lab7Acs.html">Lab 7A</a>
+	<a href="../lab7Bcs.html">Lab 7B</a>
+	<a href="../lab8acs.html">Lab 8a</a>
+	<a href="../lab8bcs.html">Lab 8b</a>
+	<a href="../lab9acs.html">Lab 9a</a>
+	<a href="../lab9bcs.html">Lab 9b</a>
+	<a href="../lab10acs.html">Lab 10a</a>
+	<a href="../lab10bcs.html">Lab 10b</a>
+	<a href="../lab11acs.html">Lab 11a</a>
+	<a href="../lab11bcs.html">Lab 11b</a>
+	<a href="../lab12acs.html">Lab 12a</a>
+	<a href="../lab13acs.html">Lab 13a</a>
+	</div>
+</div>
+
+<h1>Cyber-Attacks and Security</h1>
+
+<h2>What is Cybersecurity?</h2>
+<p>As per Oxford Languages, <q>the state of being protected against the criminal or unauthorized use of electronic data, or the measures taken to achieve this.</q> I am personally quite interested in Cybersecurity as a hobby and potential career, as I'm currently a Cyber Intelligence major. Cybersecurity is not only important to those interested in it, however, as it is vitally important to anyone who uses computers regularly to access accounts, banking information, personal information, and even social media. Important aspects of cybersecurity include using different passwords on all accounts, keeping software updated, and keeping an eye out for insecurities or breaches that can affect you. Simply put, cybersecurity is the practice of maintaining privacy and security in computers and computer networks such as the internet.</p>
+
+<h2>How Cybersecurity can affect you</h2>
+<p>Far too many people disregard cybersecurity or make false assumptions of their own safety. According to IBM, <q>the average cost of a data breach was USD 3.86 million globally, and USD 8.64 million in the United States.</q> This is only for singular data breaches, breaches that could include your credit card information with Target, as has happened before. With poor cybersecurity, everything you do and have ever done on the internet and by extension your computer can be seen, manipulated, and used by cybercriminals. These risks can be mitigated by cybersecurity steps such as using different passwords on all accounts with a password manager such as Keepass, using strong, hard to guess passwords, ideally generated randomly, in said password manager, and using authenticator apps when available. You can also be careful to check you are on an https url rather than http as well as only input information on trusted sites.</p>
+
+<h2>Cyber-Attacks</h2>
+<p>One major cyber attack in recent memory is the Wannacry ransomware (a software that encrypts all files on a computer making them inaccessible until a ransom is paid). This worm (a program that copies itself through files in order to take over as many devices as possible) decimated hospital systems around the world and took entire networks of computers offline. This worm used a flaw in earlier windows systems that had not been updated to include the patch from Microsoft, and managed to infect <q>an estimated 230,000 computers across 150 countries in just hours</q>("What was Wannacry"). The US government blames North Korea for this attack, and this goes to show how easily the average person can be caught in international cyber affairs in the modern age. This attack also shows how reliant we are on our computer systems. Hospitals and other vital systems to the functioning of society were left scrambling as the systems in charge of records, medications, and more vital information were left completely inert. Today, nations around the world practice and prepare for potential cyberwarfare attacks, especially due to the ongoing hostilities with Russia. From April 19, 2022 to April 22, 2022, Nato will be hosting a cybersecurity practice, simulating <q>Berylia, a fictional island country in the northern Atlantic Ocean, victim of a series of crippling coordinated cyberattacks that disrupted the operation of government and military networks, communications, electric power grid, and water purification systems</q>(Arghire). Because so much of modern life is reliant on computer systems, cyber warfare has the potential to throw us back to the stone age. Again in recent memory, the Colonial Pipeline ransomware forced an American company to pay almost $5 million in Bitcoin when their oil pipelines were shut down.</p>
+<div id="media">
+<img id="wc" src="Final Images/wannacry.jpg" alt="WannaCry">
+
+<img id="colop" src="Final Images/colonial.jpg" alt="Colonial Pipelines">
+
+<iframe id="video" width="840px" height="472.5" src="https://www.youtube-nocookie.com/embed/htB9V0sY48w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br><br><br>
+
+<h2>Simple, Vital Tips:</h2>
+<ul>
+<li>Remain wary: don't blindly trust links on the internet</li>
+<li>Remain vigilant: be mindful entering your passwords and change them if you suspect a leak</li>
+<li>Remain proactive: use a password manager and authenticator, be careful where you enter important information, use secure services and keep everything updated- updates often include patches for recently discovered exploits</li>
+</ul>
+
+<h2>Protection against large scale attacks</h2>
+<p>The same best practice principles that correspond with personal cyber-security can be applied to large scale attacks as well. Where the two differ, is that large cybersecurity firms exist to search out and patch any security vulnerabilites and stop hacks before they happen. There is no surefire way to stop all attacks, but keeping software updated, using best practice principles, and employing the help of cybersecurity experts are all ways to mitigate attacks.</p>
+
+<h2 >Personal Opinions</h2>
+<p>Personally, I try very hard to maintain my cybersecurity. I recommend using Firefox as a browser, with Ublock Origin and Decentraleyes as addons, Keepass (or KeepassXC for Linux users) for password management, Duo for authentication, and generally being careful what you do online. I also use Manjaro linux on my personal computer, and highly recommend making the switch to linux. You do not have to have perfect cybersecurity as most people will have far more they wish to do with their time, but taking at least some steps and being generally careful who and what you trust with your information online is enough to improve your security tenfold. I believe cyberwarfare is the logical next step for warfare as a whole, and expect to see hacking placed MUCH more prominently in the public eye in the coming years. When so much of our world relies on our computer networks, there will always be people looking for ways to leverage this reliance.</p>
+
+<h3 >References</h3>
+	<ul>
+		<li><a href="https://www.securityweek.com/over-30-countries-take-part-natos-locked-shields-2022-cyber-exercise">Arghire, Ionut. "Over 30 Countries Take Part in NATO's 'Locked Shields 2022' Cyber Exercise." SecurityWeek, https://www.securityweek.com/over-30-countries-take-part-natos-locked-shields-2022-cyber-exercise.</a></li>
+		<li><a href="https://alpinesecurity.com/blog/do-script-kiddies-carry-out-most-cyber-attacks/">"Do Script Kiddies Carry out Most Cyber Attacks?" Alpine Security, 2 Aug. 2020, https://alpinesecurity.com/blog/do-script-kiddies-carry-out-most-cyber-attacks/.</a></li>
+		<li><a href="http://xeushack.com/hacking-wep-ii">"How to Hack Wi-Fi (WEP) - II." Hacking Tutorials by Xeus, 13 July 2014, http://xeushack.com/hacking-wep-ii.</a></li>
+		<li><a href="https://www.privacytools.io/">"Privacy Guide: Fight Surveillance with Encryption and Privacy Tools." Privacy Tools: Fight Mass Surveillance with Encryption, https://www.privacytools.io/.</a></li>
+		<li><a href="https://www.cisa.gov/uscert/ncas/tips/ST04-001">"Security Tip (ST04-001)." CISA, https://www.cisa.gov/uscert/ncas/tips/ST04-001.</a></li>
+		<li><a href="https://www.ibm.com/topics/cybersecurity">"What Is Cybersecurity?" IBM, https://www.ibm.com/topics/cybersecurity.</a></li>
+		<li><a href="https://www.malwarebytes.com/wannacry">"What Was Wannacry?: Wannacry Ransomware." Malwarebytes, https://www.malwarebytes.com/wannacry.</a></li>
+	</ul>
+
+<input type="button" value="Ready for a quiz?" onclick="quizTime()" id="quiz">
+
+</body>
+</html>

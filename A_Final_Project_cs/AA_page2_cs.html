@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+<link rel="stylesheet" href="AA_Final_cs.css">
+<link rel="icon" href="Final Images/icon2.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+   /* This is the style that makes the slideshow function */
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+</style>
+<body>
+<script type="text/javascript">
+function navigator(){
+  currentvalue = document.getElementById('navigator').value;
+  if(currentvalue == "CLOSE"){
+    document.getElementById("navigator").value="MENU";
+    document.getElementById('navig').style.width="0%";
+  }else{
+    document.getElementById("navigator").value="CLOSE";
+    document.getElementById('navig').style.width="95px";
+  }
+}//I looked around for a while to find an on/off button then combined it with my existing navigation code to create this!
+</script>
+
+<!-- this script is provided by www.javascriptfreecode.com coded by: Kerixa Inc. -->
+<SCRIPT LANGUAGE="JavaScript">
+var message="Function Disabled!";
+///////////////////////////////////
+function clickIE() {if (document.all) {alert(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {alert(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// I got this script to prevent people from saving my images, I found it on javascriptfreecode.com
+</script>                                              
+</head>
+
+<body>
+<br><br><br>
+<input type="button" value="MENU" id="navigator" onclick="navigator();">
+
+<div id="navig"><div class="theLinks">
+	<a href="AA_homepage_cs.html" style="background-color: transparent;"><img src="Final Images/icon2.png" alt="icon" id="icon"></a>
+	<a href="AA_page1_cs.html">Cyber-Attacks and Security</a>
+	<a href="AA_page2_cs.html">About Me</a>
+	<a href="A_Template_cs.html">Template</a>
+	<a href="../lab2cs.html">Lab 2</a>
+	<a href="../lab3Acs.html">Lab 3A</a>
+	<a href="../lab3Bcs.html">Lab 3B</a>
+	<a href="../lab3Acs.html/#links">Useful Links</a>
+	<a href="../lab4Acs.html">Lab 4A</a>
+	<a href="../lab4B1cs.html">Lab 4B1</a>
+	<a href="../lab4B2cs.html">Lab 4B2</a>
+	<a href="../lab5Acs.html">Lab 5A</a>
+	<a href="../lab5Bcs.html">Lab 5B</a>
+	<a href="../lab5Ccs.html">Lab 5C</a>
+	<a href="../lab6Acs.html">Lab 6A</a>
+	<a href="../lab6B1cs.html">Lab 6B1</a>
+	<a href="../lab6B2cs.html">Lab 6B2</a>
+	<a href="../lab7Acs.html">Lab 7A</a>
+	<a href="../lab7Bcs.html">Lab 7B</a>
+	<a href="../lab8acs.html">Lab 8a</a>
+	<a href="../lab8bcs.html">Lab 8b</a>
+	<a href="../lab9acs.html">Lab 9a</a>
+	<a href="../lab9bcs.html">Lab 9b</a>
+	<a href="../lab10acs.html">Lab 10a</a>
+	<a href="../lab10bcs.html">Lab 10b</a>
+	<a href="../lab11acs.html">Lab 11a</a>
+	<a href="../lab11bcs.html">Lab 11b</a>
+	<a href="../lab12acs.html">Lab 12a</a>
+	<a href="../lab13acs.html">Lab 13a</a>
+	</div>
+</div>
+<h1>About Me</h1>
+
+<p>My name is Cayden Scruggs. I am a freshman at the University of South Carolina. I have a lot of interest in computers and programming, though I am also very interested in politics, psychology, and nature. I began this year as a Political Science major, then Psychology, then Cyber-Intelligence, and am now trying to get a Major Information Meeting in order to change to Computer Science. In regards to programming, I got started with trying to make Minecraft modpacks. I would go in and edit .json files and configs and enjoyed the syntax and translation of text to action so much that I began to research programming, and especially hacking, and ended up downloading a game called Bitburner. This game uses Javascript to simuate hacking in a Cyberpunk world, and it really sparked some passion for programming and cybersecurity in me. I went on to do as much research into these fields as I could, and made some much needed updates to my security such as using password managers, mobile authenticators, and making the move to Linux. Outside of programming, I really enjoy psychology with specific interest towards abnormal psychology and mental illness. The ways the human brain can function, and disfunction, are incredible to me. Recently, I have been reminded of a younger love of nature and have designed and built my first Paludarium (essentially a terrarium with a water feature). This has been one of my most enjoyable projects to date, and I love the ways its connected me to the outside world. I originally built it with the hopes of housing a garter snake (I love snakes) but it is unfortunately not quite up to snuff for this goal. Now, the tank houses two ghost shrimp, some bladder snails, many Armadillidium vulgare isopods (roly polies), some native millipedes and some temperate springtails. The tank is meant to include only native South Carolina plants and animals (I am unsure about the springtails but they are a vital component of the clean up crew!). I also love skateboarding, and oftentimes you can find me skating outside of Russell House.</p>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Final Images/vin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Final Images/fred.jpeg" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Final Images/Apheloria.jpg" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Final Images/bladdersnail.jpeg" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Final Images/creek.jpeg" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Final Images/pond.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Final Images/bufo.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Final Images/no skating.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Final Images/plants.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Final Images/tank.jpg" style="width:100%">
+  </div>
+    
+  <a id="toget" class="prev" onclick="plusSlides(-1)">&lt;</a>
+  <a id="toget" class="next" onclick="plusSlides(1)">&gt;</a>
+
+  <div class="caption-container" id="toget">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Final Images/vin.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pop Shuv Baby">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/fred.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Fred the Ghost is my girlfriend's design">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="Final Images/Apheloria.jpg" style="width:100%" onclick="currentSlide(3)" alt="Apheloria virginiensis?">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/bladdersnail.jpeg" style="width:100%" onclick="currentSlide(4)" alt="One of my bladder snails">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/creek.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Hiking the Creek">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/pond.jpg" style="width:100%" onclick="currentSlide(6)" alt="Paludarium Water Feature">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/bufo.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Anaxyrus americanus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/no skating.jpg" style="width:100%" onclick="currentSlide(8)" alt="I didn't see the sign ;)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/plants.jpg" style="width:100%" onclick="currentSlide(9)" alt="Native plants for the Paludarium!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Final Images/tank.jpg" style="width:100%" onclick="currentSlide(10)" alt="Paludarium at Night">
+    </div>    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+rotate(slideIndex);
+
+function plusSlides(n) {
+  rotate(slideIndex += n);
+}
+
+function currentSlide(n) {
+  rotate(slideIndex = n);
+}
+
+function rotate(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+//I struggled for a few hours to try and get a slideshow of my own to work to no avail, so I followed a w3schools slideshow tutorial and changed it to fit my needs and fixed some of the issues it had on my end, link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery
+</script>
+
+</body>
+</html>
