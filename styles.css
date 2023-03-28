@@ -61,11 +61,11 @@ img{
 }
 .imageBarOne .caption {
 	color: #000;
-	max-width: 60vw;
+	width: clamp(35px, 30vw, 350px);
 }
 .imageBar .caption {
 	color: #000;
-	max-width: 60vw;
+	width: clamp(35px, 30vw, 350px);
 }
 .imageBar img{
 	width: clamp(35px, 30vw, 350px);
