@@ -28,8 +28,11 @@ p {
 		padding: 50px;
 	}
 #skillText{
+		display: block;
 		background-color: #3f3f3f;
 		padding: 50px;
+		width:100%;
+		text-align: center;
 	}
 	img{
 		max-width: 60vw;
