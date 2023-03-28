@@ -1,53 +1,54 @@
 body{
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
-        background-color: #202020;
-        color: #FFF;
-		margin: 0;
-		left: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+	background-color: #202020;
+	color: #FFF;
+	margin: 0;
+	left: 0;
 }
 .header {
-    height: 70px;
-    width: 100%;
-    background-color: #3f3f3f;
-  }
+	height: 70px;
+	width: 100%;
+	background-color: #3f3f3f;
+}
 h1 {
-		text-align: center;
-		font-size: 5vw;
-	}
+	text-align: center;
+	font-size: 5vw;
+}
 h2 {
-		text-align: center;
-		margin-top: 10vh;
-		font-size: clamp(20px, 6vw, 30px);
-		padding: 0 25px;
-   }
+	text-align: center;
+	margin-top: 10vh;
+	font-size: clamp(20px, 6vw, 30px);
+	padding: 0 25px;
+}
 p {
-		width: 70vw;
-		font-size: clamp(14px, 4vw, 22px);
-		line-height: 1.5;
-		margin: auto;
-		padding: 20px;
-		text-align: center;
-	}
+	text-indent: 25px;
+	width: 70vw;
+	font-size: clamp(14px, 4vw, 22px);
+	line-height: 1.5;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
 #skillText{
-		display: block;
-		background-color: #3f3f3f;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		width:100%;
-		text-align: center;
-	}
-	img{
-		max-width: 60vw;
-		height: auto;
-	}
+	display: block;
+	background-color: #3f3f3f;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width:100%;
+	text-align: center;
+}
+img{
+	max-width: 60vw;
+	height: auto;
+}
 .imageBarOne img{
-		width: clamp(35px, 30vw, 350px);
-		margin: auto;
-		text-align: center;
-		background-color: #000;
-		padding: 5px;
-		border-radius: 2px;
-	}
+	width: clamp(35px, 30vw, 350px);
+	margin: auto;
+	text-align: center;
+	background-color: #000;
+	padding: 5px;
+	border-radius: 2px;
+}
 .imageBarOne{
 	display: inline-block;
 	padding: 5px 15px;
@@ -58,13 +59,11 @@ p {
 	box-shadow: 0px 4px 6px #0000008c;
 	max-width: 70vw;
 }
-.imageBarOne .caption
-{
+.imageBarOne .caption {
 	color: #000;
 	max-width: 60vw;
 }
-.imageBar .caption
-{
+.imageBar .caption {
 	color: #000;
 	max-width: 60vw;
 }
@@ -88,213 +87,141 @@ p {
 	box-shadow: 0px 4px 6px #0000008c;
 	max-width: 70vw;
 }
-	#projectrow{
-		margin: auto;
-		display: block;
-		width:fit-content;
-		text-align: center;
-	}
-	.projectarea{
-		display: block;
-		width: fit-content;
-		max-width: 30vw;
-		height: fit-content;
-		padding: 5vh 2.5vw;
-		background-color: #3f3f3f;
-		margin: 15vh 2.5vw 0;
-		border-radius: 4px;
-		box-shadow: 0px 4px 6px #0000008c;
-		transition: .5s;
-		text-align: center;
-	}
-	.projectarea:hover{
-		background-color:#5f5f5f;
-		box-shadow: 0px 8px 10px #0000008c;
-		transition: .5s;
-	}
-	.projects img{
-		vertical-align: bottom;
-		width: clamp(35px, 30vw, 350px);
-		height: auto;
-	}
-	.projects{
-		display: inline-block;
-		text-decoration: none;
-	}
-	.caption{
-		display: block;
-		margin: 10px 0;
-		color: #FFF;
-		max-width: 28vw;
-		text-align: center;
-		margin: auto;
-	}
-	.theLinks{
-			position: relative;
-			display: block;
-			padding: 0 5px 30px;
-			text-align: center;
+#projectrow{
+	margin: auto;
+	display: block;
+	width:fit-content;
+	text-align: center;
 }
-
-	.theLinks a{
-			margin: auto;
-			margin-top: 15px;
-			display: block;
-			font-size: 12pt;
-			font-weight: bold;
-			color: black;
-			width:fit-content;
-			text-decoration: none;
-			background-color: #9e9e9e;
-			border-radius:10px;
-			text-align: center;
-			padding: 10px;
-			transition: 1s;
+.projectarea{
+	display: block;
+	width: fit-content;
+	max-width: 30vw;
+	height: fit-content;
+	padding: 5vh 2.5vw;
+	background-color: #3f3f3f;
+	margin: 15vh 2.5vw 0;
+	border-radius: 4px;
+	box-shadow: 0px 4px 6px #0000008c;
+	transition: .5s;
+	text-align: center;
 }
-	.theLinks a:hover{
-			background-color: #FFF;
-			transition: 1s;
+.projectarea:hover{
+	background-color:#5f5f5f;
+	box-shadow: 0px 8px 10px #0000008c;
+	transition: .5s;
 }
-	#title{
-		display: block;
-		text-align: center;
-		font-size: 28pt;
-		margin: 50px 0;
-	}
-	#skillrow{
-		width:100%;
-		min-height: 500px;
-		max-height: fit-content;
-		background-color: #3f3f3f;
-		margin: 25vh auto;
-		text-align: center;
-		display: block;
-		overflow-x:wrap;
-		overflow-y: auto;
-	}
-	.skillarea{
-		display: inline-block;
-		padding: 15px;
-		width: 100px;
-		height: 100px;
-		margin: 5vh 2.5vw;
-		background-color: #9e9e9e;
-		border-radius: 15px;
-		box-shadow: 0px 4px 6px #0000008c;
-		transition: .5s;
-	}
-	.skillarea:hover{
-		box-shadow: 0px 8px 10px #0000008c;
-		width: 110px;
-		height: 110px;
-		transition: .5s;
-	}
-	.skillarea img{
-		height: 65px;
-	}
-	.skillarea .caption{
-		width: fit-content;
-		margin: 0 auto;
-		color: black;
-		font-weight: bold;
-	}
-		#navig{
-			position: fixed;
-			width: fit-content;
-			white-space: nowrap;
-			height: 100%;
-			z-index: 1;
-			overflow-y: hidden;
-			overflow-x: scroll;
-			border-radius: .5vh;
-			opacity: 0.8;
-			transition: .5s;
-			font-size: 10px;
-			scrollbar-color: black white;
-			left: -150px;
-			top: 100px;
+.projects img{
+	vertical-align: bottom;
+	width: clamp(35px, 30vw, 350px);
+	height: auto;
 }
-	#navigator{
-			position: fixed;
-			z-index: 2;
-			cursor: pointer;
-			height: 50px;
-			margin: 5px 0;
-			left: 23.75px;
-			transition: .5s;
-	}
-	#navigator:hover{
-			height: 55px;
-			transition: .5s;
-	}/*
-	#navig{
-		position: fixed;
-		top: 100px;
-		width: 0;
-		height: 90vh;
-		z-index: 2;
-		overflow-x: hidden;
-		background-color: grey;
-		border-radius:10px;
-		opacity: 0.8;
-		transition: 1s;
-		font-size: 10px;
-		scrollbar-color: black white;
+.projects{
+	display: inline-block;
+	text-decoration: none;
+}
+.caption{
+	display: block;
+	margin: 10px 0;
+	color: #FFF;
+	max-width: 28vw;
+	text-align: center;
+	margin: auto;
+}
+.theLinks{
+	position: relative;
+	display: block;
+	padding: 0 5px 30px;
+	text-align: center;
+}
+.theLinks a{
+	margin: auto;
+	margin-top: 15px;
+	display: block;
+	font-size: 12pt;
+	font-weight: bold;
+	color: black;
+	width:fit-content;
+	text-decoration: none;
+	background-color: #9e9e9e;
+	border-radius:10px;
+	text-align: center;
+	padding: 10px;
+	transition: 1s;
+}
+.theLinks a:hover{
+	background-color: #FFF;
+	transition: 1s;
+}
+#title{
+	display: block;
+	text-align: center;
+	font-size: 28pt;
+	margin: 50px 0;
+}
+#skillrow{
+	width:100%;
+	min-height: 500px;
+	max-height: fit-content;
+	background-color: #3f3f3f;
+	margin: 25vh auto;
+	text-align: center;
+	display: block;
+	overflow-x:wrap;
+	overflow-y: auto;
+}
+.skillarea{
+	display: inline-block;
+	padding: 15px;
+	width: 100px;
+	height: 100px;
+	margin: 5vh 2.5vw;
+	background-color: #9e9e9e;
+	border-radius: 15px;
+	box-shadow: 0px 4px 6px #0000008c;
+	transition: .5s;
+}
+.skillarea:hover{
+	box-shadow: 0px 8px 10px #0000008c;
+	width: 110px;
+	height: 110px;
+	transition: .5s;
+}
+.skillarea img{
+	height: 65px;
+}
+.skillarea .caption{
+	width: fit-content;
+	margin: 0 auto;
+	color: black;
+	font-weight: bold;
+}
+#navig{
+	position: fixed;
+	width: fit-content;
+	white-space: nowrap;
+	height: 100%;
+	z-index: 1;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	border-radius: .5vh;
+	opacity: 0.8;
+	transition: .5s;
+	font-size: 10px;
+	scrollbar-color: black white;
+	left: -150px;
+	top: 100px;
 }
 #navigator{
-		background-color: transparent;
-		border: none;
-		font-size: 14pt;
-		font-weight: bold;
-		position: fixed;
-		cursor: pointer;
+	position: fixed;
+	z-index: 2;
+	cursor: pointer;
+	height: 50px;
+	margin: 5px 0;
+	left: 23.75px;
+	transition: .5s;
 }
 #navigator:hover{
-		background-color: transparent;
-		border: none;
-		font-size: 16pt;
-		font-weight: bold;
-		transition: .5s;
-}*/
-	/*
-	#icon{
-			width: 40px;
-	}
-	#icon:hover{
-		width: 40px;
-		animation-name: smallpulse;
-		animation-duration: 2s;
-		animation-iteration-count: infinite;
-	}
-		@keyframes smallpulse {
-			0% {width:40px}
-			50% {width: 50px}
-			100% {width: 40px}
+	height: 55px;
+	transition: .5s;
 }
-		#lock {
-			width: 500px;
-			position: fixed;
-			top: -100%;
-			right: -100%;
-			left: -100%;
-			bottom: -100%;
-			margin: auto;
-}
-		#lock:hover {
-			width: 500px;
-			position: fixed;
-			top: -100%;
-			right: -100%;
-			left: -100%;
-			bottom: -100%;
-			margin: auto;
-			animation-name: pulse;
-			animation-duration: 2s;
-			animation-iteration-count: infinite;
-}
-		@keyframes pulse {
-			0% {width:500px}
-			50% {width: 600px}
-			100% {width: 500px}
-}
-*/

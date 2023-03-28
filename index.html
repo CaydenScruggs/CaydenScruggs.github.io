@@ -1,244 +1,232 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Home</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="images/icon2.png">
-<script type="text/javascript">
-state = "off"
-function navigator(){
-  if(state == "on"){
-    document.getElementById("navigator").src="images/iconlocked.png";
-    document.getElementById('navig').style.left="-20vw";
-    state = "off"
-  }else{
-    document.getElementById("navigator").src="images/icon2.png";
-    document.getElementById('navig').style.left="0vw";
-    state= "on"
-  }
-}
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon2.png">
+    <script type="text/javascript">
+        state = "off"
+        function navigator(){
+          if(state == "on"){
+            document.getElementById("navigator").src="images/iconlocked.png";
+            document.getElementById('navig').style.left="-20vw";
+            state = "off"
+          }else{
+            document.getElementById("navigator").src="images/icon2.png";
+            document.getElementById('navig').style.left="0vw";
+            state= "on"
+          }
+        }
+    </script>
 
 </head>
+
 <body>
 
-<script>
-  function secret(){
-    document.getElementById("webtitle").innerHTML="I love you, Pay.";
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-function goToElement(docName)
-  {
-    document.getElementById(docName).scrollIntoView({behavior: "smooth", block: "center"});
-  }
-  function goHome()
-  {
+    <script>
+        function secret(){
+            document.getElementById("webtitle").innerHTML="I love you, Pay.";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function goToElement(docName)
+          {
+            document.getElementById(docName).scrollIntoView({behavior: "smooth", block: "center"});
+          }
+          function goHome()
+          {
+        
+            var url = window.location.href.replace(/\/$/, '');  /* remove optional end / */
+            var lastSeg = url.substr(url.lastIndexOf('/') + 1);
+        
+            if(lastSeg == "index.html")
+            {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            else
+            {
+              window.location = "index.html"
+            }
+          }
+    </script>
 
-    var url = window.location.href.replace(/\/$/, '');  /* remove optional end / */
-    var lastSeg = url.substr(url.lastIndexOf('/') + 1);
+    <div class="header">
+        <input type="image" src="images/iconlocked.png" id="navigator" class="icon" onclick="navigator();">
+        <div id="navig">
+            <div class="theLinks">
+                <a onclick="goHome();">Home</a>
+                <a onclick="goToElement('skillrow');">Skills</a>
+                <a onclick="goToElement('aboutMe');">About Me</a>
+            </div>
+        </div>
+    </div>
 
-    if(lastSeg == "index.html")
-    {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    else
-    {
-      window.location = "index.html"
-    }
-  }
-</script>
+    <h1 id="webtitle">Cayden Scruggs Project Hub</h1>
+    <p style="text-align: center;">My name is Cayden Scruggs, this is my WIP (website in progress). Here you can find links to my projects and resume as well as some of my applicable skills!</p>
 
-<div class="header">
-  <input type="image" src="images/iconlocked.png" id="navigator" class="icon" onclick="navigator();">
-  <div id="navig">
-    <div class="theLinks">
-	<a onclick="goHome();">Home</a>
-	<a onclick="goToElement('skillrow');">Skills</a>
-  <a onclick="goToElement('aboutMe');">About Me</a>
-	  </div>
-  </div>
-</div>
+    <div id="projectrow">
 
+        <a class="projects" href="files/Shadows of Darkroth.jar">
+            <div class="projectarea">
+                <img src="images/darkroth.png" alt="Logo of black castle on dark background. Says Shadows of Darkroth."><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
 
+            </div>
+        </a>
 
-<h1 id="webtitle">Cayden Scruggs Project Hub</h1>
-<p>My name is Cayden Scruggs, this is my WIP (website in progress). Here you can find links to my projects and resume as well as some of my applicable skills!</p>
+        <a class="projects" href="files/resume.pdf">
+            <div class="projectarea">
+                <img src="images/resume.png" alt="Thumbnail of my resume"><span class="caption">My resume, I'm open to internships! (pdf)</span>
+            </div>
+        </a>
 
-<div id="projectrow">
+        <a class="projects" href="A_Final_Project_cs/AA_homepage_cs.html">
+            <div class="projectarea">
+                <img src="images/CSCE_project.png" alt="A padlock with the metal ring being a snake."><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
+            </div>
+        </a>
 
-<a class="projects" href="files/Shadows of Darkroth.jar">
-<div class="projectarea">
-<img src="images/darkroth.png" alt="Logo of black castle on dark background. Says Shadows of Darkroth."><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
+        <a class="projects" href="files/FredGame.jar">
+            <div class="projectarea">
+                <img src="images/fred_game_icon.png" alt="Fred the Ghost holding a pumpkin."><span class="caption">A 2D halloween-game made with no game engine.</span>
+            </div>
+        </a>
 
-</div>
-</a>
+    </div>
 
-<a class="projects" href="files/resume.pdf">
-<div class="projectarea">
-<img src="images/resume.png" alt="Thumbnail of my resume"><span class="caption">My resume, I'm open to internships! (pdf)</span>
-</div>
-</a>
+    <div id="skillrow">
+        <span id="title">skills</span>
 
-<a class="projects" href="A_Final_Project_cs/AA_homepage_cs.html">
-<div class="projectarea">
-<img src="images/CSCE_project.png" alt="A padlock with the metal ring being a snake."><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
-</div>
-</a>
+        <div class="skillarea" onclick="goToElement('linux_p');">
+            <img src="images/tuxtransparent.png" alt="Tux, the linux penguin."><span class="caption">Linux</span>
+        </div>
 
-<a class="projects" href="files/FredGame.jar">
-<div class="projectarea">
-<img src="images/fred_game_icon.png" alt="Fred the Ghost holding a pumpkin."><span class="caption">A 2D halloween-game made with no game engine.</span>
-</div>
-</a>
+        <div class="skillarea" onclick="goToElement('java_p');">
+            <img src="images/java.png" alt="Java logo."><span class="caption">Java</span>
+        </div>
 
-</div>
+        <div class="skillarea" onclick="goToElement('C#_p');">
+            <img src="images/c_sharp.png" alt="C# Logo."><span class="caption">C#</span>
+        </div>
 
-<div id="skillrow">
-  <span id="title">skills</span>
+        <div class="skillarea" onclick="goToElement('unity_p');">
+            <img src="images/unityIcon.png" alt="Unity Logo."><span class="caption">Unity</span>
+        </div>
 
-<div class="skillarea" onclick="goToElement('linux_p');">
-  <img src="images/tuxtransparent.png" alt="Tux, the linux penguin."><span class="caption">Linux</span>
-</div>
+        <div class="skillarea" onclick="goToElement('html_css_p');">
+            <img src="images/html.png" alt="HTML Logo."><span class="caption">HTML</span>
+        </div>
 
-<div class="skillarea" onclick="goToElement('java_p');">
-  <img src="images/java.png" alt="Java logo."><span class="caption">Java</span>
-</div>
+        <div class="skillarea" onclick="goToElement('html_css_p');">
+            <img src="images/css.png" alt="CSS Logo."><span class="caption">CSS</span>
+        </div>
 
-<div class="skillarea" onclick="goToElement('C#_p');">
-  <img src="images/c_sharp.png" alt="C# Logo."><span class="caption">C#</span>
-</div>
+        <div class="skillarea" onclick="goToElement('git_p');">
+            <img src="images/gitLogo.png" alt="GIT Logo."><span class="caption">Git</span>
+        </div>
+        <div class="skillarea" onclick="goToElement('hardware_p');">
+            <img src="images/wrench.png" alt="Wrench Icon."><span class="caption">Hardware</span>
+        </div>
 
-<div class="skillarea" onclick="goToElement('unity_p');">
-  <img src="images/unityIcon.png" alt="Unity Logo."><span class="caption">Unity</span>
-</div>
+        <div class="skillarea" onclick="goToElement('gimp_p');">
+            <img src="images/gimp.png" alt="GIMP Logo."><span class="caption">GIMP</span>
+        </div>
+    </div>
+    <div id="skillText">
 
-<div class="skillarea" onclick="goToElement('html_css_p');">
-  <img src="images/html.png" alt="HTML Logo."><span class="caption">HTML</span>
-</div>
+        <h1>WORK IN PROGRESS</h1>
 
-<div class="skillarea" onclick="goToElement('html_css_p');">
-  <img src="images/css.png" alt="CSS Logo."><span class="caption">CSS</span>
-</div>
+        <h2>Linux</h2>
+        <p id="linux_p">
+            I have used linux since my freshman year of college, 2021. I had been studying psychology and was approaching the realization that the major was not for me. I wasn't sure what I would do instead though, but had always been passionate about computers and was becoming interested in Cybersecurity.
+        </p>
+        <p>
+            My first foray into linux was with Kali, which I dual booted on my laptop alongside Windows. This was moreso to experiment with using a different operating system than to experiment with Kali itself though I learned a good deal, and was able to show off my ability to crack WPA-2 passwords to my peers using aircrack. I also experimented with wireshark and ran some hacks on metasploit.
+        </p>
 
-<div class="skillarea" onclick="goToElement('git_p');">
-  <img src="images/gitLogo.png" alt="GIT Logo."><span class="caption">Git</span>
-</div>
-<div class="skillarea" onclick="goToElement('hardware_p');">
-  <img src="images/wrench.png" alt="Wrench Icon."><span class="caption">Hardware</span>
-</div>
+        <p> Since, I have taken Unix/Linux Fundamentals which has given me a large boost to my bash scripting abilities, though I was already comfortable with the basics of working in a linux environment and navigating the filesystem. Currently, I use Manjaro as my main distro alongside a smaller partition for Windows 10.
+        </p>
 
-<div class="skillarea" onclick="goToElement('gimp_p');">
-  <img src="images/gimp.png" alt="GIMP Logo."><span class="caption">GIMP</span>
-</div>
-</div>
-<div id="skillText">
+        <div style="text-align: center;">
+            <div class="imageBarOne">
+                <img src="images/pics/gentoo.jpg" alt="My laptop in the midst of an attempted Gentoo installation."><span class="caption">My first attempt at a gentoo installation!</span>
+            </div>
+            <div class="imageBarOne">
+                <img src="images/pics/manjaro.jpg" alt="Image of my laptop with manjaro linux loaded."><span class="caption">My first successful Manjaro installation.</span>
+            </div>
+            <div class="imageBarOne">
+                <img src="images/pics/kali.jpg" alt="Image of my laptop with kali linux loaded"><span class="caption">My first ever Linux distro.</span>
+            </div>
+        </div>
 
-<h1>WORK IN PROGRESS</h1>
+        <h2>Java</h2>
+        <p id="java_p">
+            I began working with Java in August of 2022. Before this, I had done some sporadic "programming" with HTML, CSS, some javascript, and mostly JSON file editing for modding games. I fell in love with programming after my first Hello World program. Programming is absolutely my passion and I love every moment of it, from the depths of bug fixing to the catharsis of finally writing functional code.
+            <p> My programming abilities have consistently been more advanced than the majority of my peers because I continue learning and practicing in my free time. I have written a variety of advanced programs in Java and am quite confident in my abilities to tackle any situation in front of me, though I'm not afraid to sit down and research a problem when I need to.
+            </p>
+        </p>
+        <div class="imageBar">
+            <img src="images/pics/fred_ss.png" alt="A screenshot of an early game."><span class="caption">A 2D game made entirely in java with no game engine or framework. The ghost, Fred, is my girlfriend's design!</span>
+        </div>
 
-<h2>Linux</h2>
-<p id="linux_p">
-  I have used linux since my freshman year of college, 2021. I had been studying psychology and was approaching the realization that the major was not for me.
-  I wasn't sure what I would do instead though, but had always been passionate about computers and was becoming interested in Cybersecurity. My first foray into linux was
-  with Kali, which I dual booted on my laptop alongside Windows. This was moreso to experiment with using a different operating system than to experiment with Kali itself
-  though I learned a good deal, and was able to show off my ability to crack WPA-2 passwords to my peers using aircrack. I also experimented with wireshark and ran some hacks
-  on metasploit. Since, I have taken Unix/Linux Fundamentals which has given me a large boost to my bash scripting abilities, though I was already comfortable with the basics of
-  working in a linux environment and navigating the filesystem. Currently, I use Manjaro as my main distro alongside a smaller partition for Windows 10.
+        <h2>C#</h2>
+        <p id="C#_p">
+            I have been using C# since October of 2022, and have already gained a strong understanding of the language. I use C# in Unity Game Editor projects and have probably written my best code in this language. Currently, I am working on a game revolving around a simulated genetics system that is accurate to the real world genetics of the creatures I'm emulating! I'm extremely passionate about this project in particular as it has not only a source of great creative inspiration, but gives me a way to learn many different aspects of programming and computer science in an environment where my progress is directly visible.
+        </p>
 
-</p>
-<div style="text-align: center;">
-<div class="imageBarOne">
-  <img src="images/pics/gentoo.jpg" alt="My laptop in the midst of an attempted Gentoo installation."><span class="caption">My first attempt at a gentoo installation!</span>
-</div>
-<div class="imageBarOne">
-  <img src="images/pics/manjaro.jpg" alt="Image of my laptop with manjaro linux loaded."><span class="caption">My first successful Manjaro installation.</span>
-</div>
-<div class="imageBarOne">
-  <img src="images/pics/kali.jpg" alt="Image of my laptop with kali linux loaded"><span class="caption">My first ever Linux distro.</span>
-</div>
-</div>
+        <h2>Unity</h2>
+        <p id="unity_p">
+            I have been using the Unity Game Editor since October of 2022. While I am fairly experienced with the software and have already made great progress on my main project, I am aware that there is still a good deal that I don't know yet. Because of this, I am continuing to research and work in the environment as often as I can, making frequent visits to the documentation, so that I can master Unity and become a stronger developer. My work in Unity has also exposed me to a much wider range of content and skills than programming alone would.
+        </p>
+        <div class="imageBar">
+            <img src="images/pics/game_screenshot.png" alt="A screenshot of my current project"><span class="caption">This is a screenshot from an early build of my current project, based around breeding snakes.</span>
+        </div>
 
-<h2>Java</h2>
-<p id="java_p">
-  I began working with Java in August of 2022. Before this, I had done some sporadic "programming" with HTML, CSS, some javascript, and mostly JSON file editing for modding
-  games. I fell in love with programming after my first Hello World program. Programming is absolutely my passion and I love every moment of it, from the depths of bug fixing to the
-  catharsis of finally writing functional code. My programming abilities have consistently been more advanced than the majority of my peers because I continue learning and practicing
-  in my free time. I have written a variety of advanced programs in Java and am quite confident in my abilities to tackle any situation in front of me, though I'm not afraid to sit down
-  and research a problem when I need to.
-</p>
-<div class="imageBar">
-  <img src="images/pics/fred_ss.png" alt="A screenshot of an early game."><span class="caption">A 2D game made entirely in java with no game engine or framework. The ghost, Fred, is my girlfriend's design!</span>
-</div>
+        <h2>HTML & CSS</h2>
+        <p id="html_css_p">
+            I have used HTML and CSS since January of 2021. I had a fair bit of exposure prior to this as I've been interested in and working on computers and websites my entire life, but it was in January that I took a class specifically geared towards website design, and learned how to use HTML and CSS in order to create a smooth, visually-pleasing website. This website was entirely designed by myself, and these skills carry over to fields such as app and UI design.
+        </p>
 
-<h2>C#</h2>
-<p id="C#_p">
-  I have been using C# since October of 2022, and have already gained a strong understanding of the language. I use C# in Unity Game Editor projects and have probably written my best code
-  in this language. Currently, I am working on a game revolving around a simulated genetics system that is accurate to the real world genetics of the creatures I'm emulating! I'm extremely passionate
-  about this project in particular as it has not only a source of great creative inspiration, but gives me a way to learn many different aspects of programming and computer science in an environment
-  where my progress is directly visible.
-</p>
+        <h2>Hardware</h2>
+        <p id="hardware_p">
+            I have always enjoyed taking machines apart to figure out how they work, and I feel no differently towards computers. I am very familiar with the inner workings of computers and how to diagnose and fix the vast majority of problems a typical user might face, on Windows and Linux machines. I have upgraded parts in both of my main computers multiple times, and am currently building a new computer.
+        </p>
+        <div class="imageBar">
+            <img src="images/pics/pc.jpg" alt="The inside of my computer"><span class="caption">Recently, I upgraded the GPU in my pc from a GTX 970 to a 1080 ti.</span>
+        </div>
 
-<h2>Unity</h2>
-<p id="unity_p">
-  I have been using the Unity Game Editor since October of 2022. While I am fairly experienced with the software and have already made great progress on my main project, I am aware that there is still
-  a good deal that I don't know yet. Because of this, I am continuing to research and work in the environment as often as I can, making frequent visits to the documentation, so that I can master 
-  Unity and become a stronger developer. My work in Unity has also exposed me to a much wider range of content and skills than programming alone would.
-</p>
-<div class="imageBar">
-  <img src="images/pics/game_screenshot.png" alt="A screenshot of my current project"><span class="caption">This is a screenshot from an early build of my current project, based around breeding snakes.</span>
-</div>
+        <h2>GIMP</h2>
+        <p id="gimp_p">
+            I have a great deal of experience with photo and video editing software, as I have always been interested in creative endeavors. I have been using GIMP now that I use linux as my main distro, and have become quite skilled in creating and editing all sorts of assets. I use GIMP in order to make art for games, icons for websites and UIs, edit photos and documents, and more. I used Pixlr before GIMP, and am confident in my abilities.
+        </p>
 
-<h2>HTML & CSS</h2>
-<p id="html_css_p">
-  I have used HTML and CSS since January of 2021. I had a fair bit of exposure prior to this as I've been interested in and working on computers and websites my entire life, but it was in January
-  that I took a class specifically geared towards website design, and learned how to use HTML and CSS in order to create a smooth, visually-pleasing website. This website was entirely designed by myself, 
-  and these skills carry over to fields such as app and UI design.
-</p>
+        <h2>Git</h2>
+        <p id="git_p">
+            I have used Github for years, looking through code uploaded by other programmers to learn and find cool projects, but only recently began learning git. I currently have three local git repositories that I frequently push to my github accounts, this website being one of them!
+        </p>
+    </div>
+    <div>
+        <h1>About Me</h1>
+        <div class="imageBar">
+            <img id="aboutMe" src="images/pics/me.jpg" alt="A picture of me standing in front of Swearingen.">
+        </div>
+        <h2>Cayden Scruggs, University of South Carolina</h2>
+        <h2 style="margin-top: 1vh" ;>Bachelor's of Science in Computer Science, June 2025</h2>
+        <p>
+            My name is Cayden Scruggs, and I love to create. From writing and drawing to programming and developing, anything that allows me to put my mind to work and come up with novel solutions and new ideas gives me a firey drive like no other. I have written countless poems and short stories as well as a novel, constructed a student council campaign that caught the attention of a United States presidential candidate, designed multiple games, and created clever programs to solve the problems I face in my day to day life.
+        </p>
+        <p>
+            I struggled to find the drive to focus in my Chemistry class for a while, so I created command line applications to do simple chemical calculations for me as well as give flashcards for me to study. I live my life searching for ways to make things better, and I try to translate that into my work. I don't know nearly everything about my field, but I am always willing and excited to research new topics in order to solve problems and widen my abilities as a programmer. Currently, I am hoping to find a job that prioritizes programming but would love to apply any of my other skills wherever I can.
+        </p>
+        <br>
+        <br>
+        <br>
 
-<h2>Hardware</h2>
-<p id="hardware_p">
-  I have always enjoyed taking machines apart to figure out how they work, and I feel no differently towards computers. I am very familiar with the inner workings of computers and how to diagnose and fix the vast 
-  majority of problems a typical user might face, on Windows and Linux machines. I have upgraded parts in both of my main computers multiple times, and am currently building a new computer. 
-</p>
-<div class="imageBar">
-  <img src="images/pics/pc.jpg" alt="The inside of my computer"><span class="caption">Recently, I upgraded the GPU in my pc from a GTX 970 to a 1080 ti.</span>
-</div>
+    </div>
 
-<h2>GIMP</h2>
-<p id="gimp_p">
-  I have a great deal of experience with photo and video editing software, as I have always been interested in creative endeavors. I have been using GIMP now that I use linux as my main distro, and have
-  become quite skilled in creating and editing all sorts of assets. I use GIMP in order to make art for games, icons for websites and UIs, edit photos and documents, and more. I used Pixlr before GIMP, and 
-  am confident in my abilities.
-</p>
-
-<h2>Git</h2>
-<p id="git_p">
-  I have used Github for years, looking through code uploaded by other programmers to learn and find cool projects, but only recently began learning git. I currently have three local git repositories that I 
-  frequently push to my github accounts, this website being one of them!
-</p>
-</div>
-<div>
-<h1>About Me</h1>
-<div class="imageBar">
-  <img id="aboutMe" src="images/pics/me.jpg" alt="A picture of me standing in front of Swearingen.">
-  </div>
-  <h2>Cayden Scruggs, University of South Carolina, Bachelor's of Science in Computer Science, June 2025</h2>
-<p>
-  My name is Cayden Scruggs, and I love to create. From writing and drawing to programming and developing, anything that allows me to put my mind to work and come up with novel solutions and new ideas gives 
-  me a firey drive like no other. I have written countless poems and short stories as well as a novel, constructed a student council campaign that caught the attention of a United States presidential candidate, 
-  designed multiple games, and created clever programs to solve the problems I face in my day to day life. I struggled to find the drive to focus in my Chemistry class for a while, so I created command line applications 
-  to do simple chemical calculations for me as well as give flashcards for me to study. I live my life searching for ways to make things better, and I try to translate that into my work. I don't know nearly everything about 
-  my field, but I am always willing and excited to research new topics in order to solve problems and widen my abilities as a programmer. Currently, I am hoping to find a job that prioritizes programming but would love 
-  to apply any of my other skills wherever I can. 
-</p>
-<br>
-<br>
-<br>
-
-</div>
-
-<input type="image" src="images/fredtransp.png" alt="Shhh" style="height:10px;position:fixed;bottom:0px;left:0px;" onclick="secret();">
+    <input type="image" src="images/fredtransp.png" alt="Shhh" style="height:10px;position:fixed;bottom:0px;left:0px;" onclick="secret();">
 
 </body>
+
 </html>
