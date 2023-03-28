@@ -30,6 +30,10 @@ p {
 		background-color: #3f3f3f;
 		padding: 50px;
 	}
+	img
+	{
+		max-width: 80vw;
+	}
 .imageBarOne img{
 		height: 35vh;
 		margin: auto;
