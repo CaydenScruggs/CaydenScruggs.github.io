@@ -13,12 +13,67 @@ h1 {
 		text-align: center;
 		font-size: 28pt;
 	}
+h2 {
+		text-align: center;
+		margin-top: 100px;
+		margin-bottom: 50px;
+   }
 p {
+		width: 80vw;
 		text-align: center;
 		font-size: 14pt;
 		line-height: 1.5;
-		margin: 0 10px;
+		margin: auto;
+		padding: 50px;
 	}
+#skillText{
+		background-color: #3f3f3f;
+		padding: 50px;
+	}
+.imageBarOne img{
+		height: 35vh;
+		margin: auto;
+		text-align: center;
+		background-color: #000;
+		padding: 5px;
+		border-radius: 2px;
+	}
+.imageBarOne{
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 5px 25px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	opacity: 60%;
+	box-shadow: 0px 4px 6px #0000008c;
+}
+.imageBarOne .caption
+{
+	color: #000;
+}
+.imageBar .caption
+{
+	color: #000;
+}
+.imageBar img{
+	height: 35vh;
+	margin: auto;
+	text-align: center;
+	background-color: #000;
+	padding: 5px;
+	border-radius: 2px;
+}
+.imageBar{
+	display: block;
+	padding: 15px 45px;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: fit-content;
+	margin: auto;
+	opacity: 60%;
+	box-shadow: 0px 4px 6px #0000008c;
+}
 	#projectrow{
 		margin: auto;
 		display: block;
@@ -51,6 +106,8 @@ p {
 		margin-top: 2.5vh;
 		color: #FFF;
 		width: 400px;
+		text-align: center;
+		margin: auto;
 	}
 	.theLinks{
 			position: relative;
@@ -60,7 +117,9 @@ p {
 }
 
 	.theLinks a{
-			display: inline-block;
+			margin: auto;
+			margin-top: 15px;
+			display: block;
 			font-size: 12pt;
 			font-weight: bold;
 			color: black;
@@ -69,28 +128,12 @@ p {
 			background-color: #9e9e9e;
 			border-radius:10px;
 			text-align: center;
-			margin: 15px 2.5vw 5px 2.5vw;
 			padding: 10px;
 			transition: 1s;
 }
 	.theLinks a:hover{
 			background-color: #FFF;
 			transition: 1s;
-}
-	#navig{
-			position: fixed;
-			width: 100vw;
-			white-space: nowrap;
-			height: 70px;
-			z-index: 1;
-			overflow-y: hidden;
-			overflow-x: scroll;
-			border-radius: .5vh;
-			opacity: 0.8;
-			transition: 1.2s;
-			font-size: 10px;
-			scrollbar-color: black white;
-			left: -150%;
 }
 	#title{
 		display: block;
@@ -135,6 +178,22 @@ p {
 		color: black;
 		font-weight: bold;
 	}
+		#navig{
+			position: fixed;
+			width: 10%;
+			white-space: nowrap;
+			height: 100%;
+			z-index: 1;
+			overflow-y: hidden;
+			overflow-x: scroll;
+			border-radius: .5vh;
+			opacity: 0.8;
+			transition: .5s;
+			font-size: 10px;
+			scrollbar-color: black white;
+			left: -150px;
+			top: 100px;
+}
 	#navigator{
 			position: fixed;
 			z-index: 2;
@@ -147,7 +206,36 @@ p {
 	#navigator:hover{
 			height: 55px;
 			transition: .5s;
-	}
+	}/*
+	#navig{
+		position: fixed;
+		top: 100px;
+		width: 0;
+		height: 90vh;
+		z-index: 2;
+		overflow-x: hidden;
+		background-color: grey;
+		border-radius:10px;
+		opacity: 0.8;
+		transition: 1s;
+		font-size: 10px;
+		scrollbar-color: black white;
+}
+#navigator{
+		background-color: transparent;
+		border: none;
+		font-size: 14pt;
+		font-weight: bold;
+		position: fixed;
+		cursor: pointer;
+}
+#navigator:hover{
+		background-color: transparent;
+		border: none;
+		font-size: 16pt;
+		font-weight: bold;
+		transition: .5s;
+}*/
 	/*
 	#icon{
 			width: 40px;
