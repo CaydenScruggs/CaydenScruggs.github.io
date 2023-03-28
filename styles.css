@@ -24,12 +24,13 @@ p {
 		font-size: 14pt;
 		line-height: 1.5;
 		margin: auto;
-		padding: 50px;
+		padding: 20px;
 	}
 #skillText{
 		display: block;
 		background-color: #3f3f3f;
 		padding-top: 50px;
+		padding-bottom: 50px;
 		width:100%;
 		text-align: center;
 	}
