@@ -12,19 +12,21 @@ body{
   }
 h1 {
 		text-align: center;
-		font-size: 28pt;
+		font-size: 5vw;
 	}
 h2 {
 		text-align: center;
 		margin-top: 10vh;
+		font-size: clamp(20px, 6vw, 30px);
+		padding: 0 25px;
    }
 p {
 		width: 70vw;
-		text-align: center;
-		font-size: 14pt;
+		font-size: clamp(14px, 4vw, 22px);
 		line-height: 1.5;
 		margin: auto;
 		padding: 20px;
+		text-align: justify;
 	}
 #skillText{
 		display: block;
@@ -36,9 +38,10 @@ p {
 	}
 	img{
 		max-width: 60vw;
+		height: auto;
 	}
 .imageBarOne img{
-		height: 35vh;
+		width: clamp(35px, 30vw, 350px);
 		margin: auto;
 		text-align: center;
 		background-color: #000;
@@ -66,7 +69,7 @@ p {
 	max-width: 60vw;
 }
 .imageBar img{
-	height: 35vh;
+	width: clamp(35px, 30vw, 350px);
 	margin: auto;
 	text-align: center;
 	background-color: #000;
@@ -94,6 +97,8 @@ p {
 	.projectarea{
 		display: inline-block;
 		width: fit-content;
+		max-width: 30vw;
+		height: fit-content;
 		padding: 5vh 2.5vw;
 		background-color: #3f3f3f;
 		margin: 15vh 2.5vw 0;
@@ -108,15 +113,17 @@ p {
 	}
 	.projects img{
 		vertical-align: bottom;
+		width: clamp(35px, 30vw, 350px);
+		height: auto;
 	}
 	.projects{
 		display: contents;
 	}
 	.caption{
 		display: block;
-		margin-top: 2.5vh;
+		margin: 10px 0;
 		color: #FFF;
-		width: 400px;
+		max-width: 25vw;
 		text-align: center;
 		margin: auto;
 	}
