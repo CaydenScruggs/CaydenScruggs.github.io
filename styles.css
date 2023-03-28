@@ -30,10 +30,7 @@ p {
 		background-color: #3f3f3f;
 		padding: 50px;
 	}
-	img
-	{
-		max-width: 80vw;
-	}
+
 .imageBarOne img{
 		height: 35vh;
 		margin: auto;
@@ -50,6 +47,7 @@ p {
 	border-radius: 5px;
 	opacity: 60%;
 	box-shadow: 0px 4px 6px #0000008c;
+	max-width: 80vw;
 }
 .imageBarOne .caption
 {
@@ -77,6 +75,7 @@ p {
 	margin: auto;
 	opacity: 60%;
 	box-shadow: 0px 4px 6px #0000008c;
+	max-width: 80vw;
 }
 	#projectrow{
 		margin: auto;
