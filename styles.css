@@ -30,7 +30,7 @@ p {
 #skillText{
 		display: block;
 		background-color: #3f3f3f;
-		padding: 50px;
+		padding-top: 50px;
 		width:100%;
 		text-align: center;
 	}
