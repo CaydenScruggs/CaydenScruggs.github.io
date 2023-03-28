@@ -54,10 +54,12 @@ p {
 .imageBarOne .caption
 {
 	color: #000;
+	max-width: 60vw;
 }
 .imageBar .caption
 {
 	color: #000;
+	max-width: 60vw;
 }
 .imageBar img{
 	height: 35vh;
