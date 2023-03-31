@@ -37,8 +37,8 @@
           }
           function goHome()
           {
-        
-            var url = window.location.href.replace(/\/$/, '');  /* remove optional end / */
+            /*
+            var url = window.location.href.replace(/\/$/, '');  //remove optional end //
             var lastSeg = url.substr(url.lastIndexOf('/') + 1);
         
             if(lastSeg == "index.html")
@@ -49,6 +49,8 @@
             {
               window.location = "index.html"
             }
+            */
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
     </script>
 
