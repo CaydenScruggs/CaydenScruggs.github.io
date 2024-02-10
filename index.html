@@ -12,11 +12,11 @@
         function navigator(){
           if(state == "on"){
             document.getElementById("navigator").src="images/iconlocked.png";
-            document.getElementById('navig').style.left="-20vw";
+            document.getElementById('navig').style.left="-100%";
             state = "off"
           }else{
             document.getElementById("navigator").src="images/icon2.png";
-            document.getElementById('navig').style.left="0vw";
+            document.getElementById('navig').style.left="0%";
             state= "on"
           }
         }
@@ -52,9 +52,11 @@
             */
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
+
     </script>
 
     <div class="header">
+        
         <input type="image" src="images/iconlocked.png" id="navigator" class="icon" onclick="navigator();">
         <div id="navig">
             <div class="theLinks">
@@ -64,40 +66,44 @@
                 <a href="https://github.com/GarterScales">Github Repo</a> 
             </div>
         </div>
+        <h1 id="webtitle">Cayden Scruggs Project Hub</h1>
     </div>
-
-    <h1 id="webtitle">Cayden Scruggs Project Hub</h1>
-    <p style="text-align: center;">My name is Cayden Scruggs, this is my WIP (website in progress). Here you can find links to my projects and resume as well as some of my applicable skills!</p>
-
     <div id="projectrow">
 
         <a class="projects" href="files/Shadows of Darkroth.jar">
-            <div class="projectarea">
                 <img src="images/darkroth.png" alt="Logo of black castle on dark background. Says Shadows of Darkroth."><span class="caption">A dark CYOA-RPG game in the form of a Java CLI. (download)</span>
 
-            </div>
         </a>
 
         <a class="projects" href="files/resume.pdf">
-            <div class="projectarea">
                 <img src="images/resume.png" alt="Thumbnail of my resume"><span class="caption">My resume, I'm open to internships! (pdf)</span>
-            </div>
         </a>
 
         <a class="projects" href="A_Final_Project_cs/AA_homepage_cs.html">
-            <div class="projectarea">
                 <img src="images/CSCE_project.png" alt="A padlock with the metal ring being a snake."><span class="caption">A rudimentary final project for CSCE 102, my beginnings!</span>
-            </div>
         </a>
 
         <a class="projects" href="files/FredGame.jar">
-            <div class="projectarea">
                 <img src="images/fred_game_icon.png" alt="Fred the Ghost holding a pumpkin."><span class="caption">A 2D halloween-game made with no game engine.</span>
-            </div>
         </a>
 
     </div>
 
+    <div class="carousel">
+        <div class="control-btns">
+            <button onclick="showPrevImage()">Previous</button>
+            <button onclick="showNextImage()">Next</button>
+            <input type="checkbox" onchange="toggleAutoFlip()" id="autoFlip" checked autocomplete='off'>
+            <label for="autoFlip">AutoScroll?</label>
+        </div>
+        <span id="carousel-index"></span>
+        <div id="carousel-slide">
+          <img id="carousel-image" src="images/dennys/franch_dash_online.png">
+          <div id="caption">This is an interactive financials dashboard I built using PowerBI to visualize financial data in relation to multiple variables.</div>
+        </div>
+    </div>
+
+    
     <div id="skillrow">
         <span id="title">skills</span>
 
@@ -138,8 +144,6 @@
     </div>
     <div id="skillText">
 
-        <h1>WORK IN PROGRESS</h1>
-
         <h2>Linux</h2>
         <p id="linux_p">
             I have used linux since my freshman year of college, 2021. I had been studying psychology and was approaching the realization that the major was not for me. I wasn't sure what I would do instead though, but had always been passionate about computers and was becoming interested in Cybersecurity.
@@ -150,18 +154,6 @@
 
         <p> Since, I have taken Unix/Linux Fundamentals which has given me a large boost to my bash scripting abilities, though I was already comfortable with the basics of working in a linux environment and navigating the filesystem. Currently, I use Manjaro as my main distro.
         </p>
-
-        <div style="text-align: center;">
-            <div class="imageBarOne">
-                <img src="images/pics/gentoo.jpg" alt="My laptop in the midst of an attempted Gentoo installation."><span class="caption">My first attempt at a gentoo installation!</span>
-            </div>
-            <div class="imageBarOne">
-                <img src="images/pics/manjaro.jpg" alt="Image of my laptop with manjaro linux loaded."><span class="caption">My first successful Manjaro installation.</span>
-            </div>
-            <div class="imageBarOne">
-                <img src="images/pics/kali.jpg" alt="Image of my laptop with kali linux loaded"><span class="caption">My first ever Linux distro.</span>
-            </div>
-        </div>
 
         <h2>Java</h2>
         <p id="java_p">
@@ -227,6 +219,111 @@
 
     <input type="image" src="images/fredtransp.png" alt="Shhh" style="height:10px;position:fixed;bottom:0px;left:0px;" onclick="secret();">
 
+    <script>
+        const images = [
+          {
+            path: "images/dennys/ilumen_dashboard.png",
+            caption: "Interactive financials dashboard I built using PowerBI to visualize financial data in relation to multiple variables, data brought in from MS SQL Server."
+          },
+          {
+            path: "images/dennys/project_tracking_metrics.png",
+            caption: "PowerBI dashboard tracking QR Pay Project."
+          },
+          {
+            path: "images/dennys/train_1.png",
+            caption: "For this project, I built SQL queries to bring in training, termination, and turnover data for employees at franchises across the country. This dashboard was built using javascript with Node.js, Vue.js, and Quasar. The data was pulled in by API to a server that I then connected to the host client."
+          },
+          {
+            path: "images/dennys/train_2.png",
+            caption: "Additional Training Data."
+          },
+          {
+            path: "images/dennys/ilumen_dashboard_node.png",
+            caption: "This is the original Node.js version of the financials dashboard built with Vue, Bootstrap, and Pinia. I built the SQL queries and did all of the backend work for this dashboard that was added to the Denny's BI Portal to be used by franchisees throughout the company."
+          },
+          {
+            path: "images/dennys/ilumen_dashboard_node_popup.png",
+            caption: "Additional data for financials dashboard, this dashboard is able to be exported in excel format."
+          },
+          {
+            path: "images/dennys/ilumen_dashboard_node_chart.png",
+            caption: "Chart with multiple variables and ability to add new charts to compare against. These charts can be exported to powerpoint."
+          },
+          {
+            path: "images/dennys/franch_dash_train.png",
+            caption: "Node.js franchise dashboard tab inspired by and utilizing my previously made SQL queries relating to training data."
+          },
+          {
+            path: "images/dennys/franch_dash_online.png",
+            caption: "Node.js franchise dashboard tab."
+          },
+          {
+            path: "images/dennys/franch_dash_remodel.png",
+            caption: "Node.js franchise dashboard tab."
+          },
+          {
+            path: "images/dennys/franch_dash_sales_and_traffic.png",
+            caption: "Node.js franchise dashboard tab."
+          },
+          {
+            path: "images/dennys/excel_upload_alert.png",
+            caption: "Error notifier deconstructing error objects and feeding them into a simple visual."
+          }
+        ];
+    
+        let currentIndex = 0;
+        let autoFlip = true;
+
+        const carouselImage = document.getElementById('carousel-image');
+        const captionElement = document.getElementById('caption');
+        const currCarouselIndex = document.getElementById('carousel-index');
+        showImage(currentIndex);
+
+        function showImage(index) {
+        carouselImage.src = images[index].path;
+        captionElement.textContent = images[index].caption;
+        currentIndex = index;
+        currCarouselIndex.innerText=currentIndex+1 + "/" + images.length;
+        }
+
+        function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+        resetInterval();
+        }
+
+        function showPrevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+        resetInterval();
+        }
+
+        function toggleAutoFlip() {
+            autoFlip = !autoFlip;
+            if (!autoFlip) {
+                clearInterval(intervalId);
+            } else {
+                intervalId = setInterval(cycleImages, 15000);
+            }
+        }
+
+        function resetInterval() {
+            if(autoFlip) {
+            clearInterval(intervalId);
+            intervalId = setInterval(cycleImages, 15000); // Reset interval
+            }
+        }
+
+        
+        function cycleImages() {
+        carouselImage.src = images[currentIndex].path;
+        captionElement.textContent = images[currentIndex].caption;
+        currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Start cycling through images
+        intervalId = setInterval(cycleImages, 15000);
+    </script>
 </body>
 
 </html>
